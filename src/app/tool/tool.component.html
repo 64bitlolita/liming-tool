@@ -1,109 +1,109 @@
-<table class="table table-bordered">
-  <thead>
-  <tr>
-    <th scope="col"></th>
-    <th scope="col">%</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>Hct</td>
-    <td class="input"><input [(ngModel)]="hct"/></td>
-  </tr>
-  </tbody>
-</table>
-
-<div>
+<div class="container-fluid">
   <table class="table table-bordered">
     <thead>
     <tr>
       <th scope="col"></th>
-      <th scope="col">ml</th>
+      <th scope="col">%</th>
     </tr>
     </thead>
     <tbody>
     <tr>
-      <td>PRBCs to Pump</td>
-      <td class="input"><input  [(ngModel)]="prbcsToPump" (change)="calculateTotalPrbcs()"/></td>
-    </tr>
-    <tr>
-      <td>PRBCs to Anesth</td>
-      <td class="input"><input [(ngModel)]="prbcsToAnesth" (change)="calculateTotalPrbcs()"/></td>
-    </tr>
-    <tr>
-      <td>Total PRBCs</td>
-      <td>{{totalPrbcs}}</td>
+      <td>Hct</td>
+      <td class="input"><input [(ngModel)]="hct"/></td>
     </tr>
     </tbody>
   </table>
 
-  <table class="table table-bordered">
-    <thead>
-    <tr>
-      <th scope="col"></th>
-      <th scope="col">ml</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>Estimated Plasma Loss (EPL)</td>
-      <td>{{epl}}</td>
-    </tr>
-    <tr>
-      <td>Total Blood Loss (TBL)</td>
-      <td>{{tbl}}</td>
-    </tr>
-    <tr>
-      <td>Est. Irrigation</td>
-      <td>{{estIrrigation}}</td>
-    </tr>
-    </tbody>
-  </table>
+  <div class="block">
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">ml</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>PRBCs to Pump</td>
+        <td class="input"><input [(ngModel)]="prbcsToPump" (change)="calculateTotalPrbcs()"/></td>
+      </tr>
+      <tr>
+        <td>PRBCs to Anesth</td>
+        <td class="input"><input [(ngModel)]="prbcsToAnesth" (change)="calculateTotalPrbcs()"/></td>
+      </tr>
+      <tr>
+        <td>Total PRBCs</td>
+        <td>{{totalPrbcs}}</td>
+      </tr>
+      </tbody>
+    </table>
 
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">ml</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Total Volume Processed</td>
+        <td class="input"><input [(ngModel)]="totalVolumeProcessed" (change)="calculateTotalFieldVolume()"/></td>
+      </tr>
+      <tr>
+        <td>Total ACD used</td>
+        <td class="input"><input [(ngModel)]="totalACDUsed" (change)="calculateTotalFieldVolume()"/></td>
+      </tr>
+      <tr>
+        <td>Total Field Volume Suctioned</td>
+        <td>{{totalFieldVolume}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <div class="block">
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">ml</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Estimated Plasma Loss (EPL)</td>
+        <td>{{epl}}</td>
+      </tr>
+      <tr>
+        <td>Total Blood Loss (TBL)</td>
+        <td>{{tbl}}</td>
+      </tr>
+      <tr>
+        <td>Est. Irrigation</td>
+        <td>{{estIrrigation}}</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">ml</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Total N/S used</td>
+        <td class="input"><input [(ngModel)]="totalNSUsed"/></td>
+      </tr>
+      <tr>
+        <td>Est. Irrigation</td>
+        <td>{{estIrrigation}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
-
-
-<div>
-  <table class="table table-bordered">
-    <thead>
-    <tr>
-      <th scope="col"></th>
-      <th scope="col">ml</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>Total Volume Processed</td>
-      <td class="input"><input  [(ngModel)]="totalVolumeProcessed" (change)="calculateTotalFieldVolume()"/></td>
-    </tr>
-    <tr>
-      <td>Total ACD used</td>
-      <td class="input"><input  [(ngModel)]="totalACDUsed" (change)="calculateTotalFieldVolume()"/></td>
-    </tr>
-    <tr>
-      <td>Total Field Volume Suctioned</td>
-      <td>{{totalFieldVolume}}</td>
-    </tr>
-    </tbody>
-  </table>
-
-  <table class="table table-bordered">
-    <thead>
-    <tr>
-      <th scope="col"></th>
-      <th scope="col">ml</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>Total N/S used</td>
-      <td class="input"><input  [(ngModel)]="totalNSUsed" /></td>
-    </tr>
-    <tr>
-      <td>Est. Irrigation</td>
-      <td>{{estIrrigation}}</td>
-    </tr>
-    </tbody>
-  </table>
-</div>
-

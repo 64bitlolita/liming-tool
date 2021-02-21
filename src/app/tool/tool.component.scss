@@ -3,16 +3,16 @@
 }
 
 table {
-  width: 500px;
-  margin-left: 50px;
+  width: 420px;
+  margin-left: 20px;
 }
 
-div > table {
+.block {
   display: inline-block;
 }
 
 th {
-  width: 250px;
+  width: 210px;
 }
 
 td > input {
