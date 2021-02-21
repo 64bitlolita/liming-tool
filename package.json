@@ -1,6 +1,7 @@
 {
   "name": "liming-tool",
   "version": "0.0.0",
+  "homepage": "https://64bitlolita.github.io/liming-tool",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
