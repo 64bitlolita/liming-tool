@@ -1,0 +1,21 @@
+:host {
+  margin-left: 100px;
+}
+
+table {
+  width: 500px;
+  margin-left: 50px;
+}
+
+div > table {
+  display: inline-block;
+}
+
+th {
+  width: 250px;
+}
+
+td > input {
+  background-color: lightyellow;
+  width: 150px;
+}
