@@ -20,19 +20,19 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist",
-            "index": "liming-tool/src/index.html",
-            "main": "liming-tool/src/main.ts",
-            "polyfills": "liming-tool/src/polyfills.ts",
-            "tsConfig": "liming-tool/tsconfig.app.json",
+            "outputPath": "dist/liming-tool",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
-              "liming-tool/src/favicon.ico",
-              "liming-tool/src/assets"
+              "src/favicon.ico",
+              "src/assets"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.css",
-              "liming-tool/src/styles.scss"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -40,8 +40,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "liming-tool/src/environments/environment.ts",
-                  "with": "liming-tool/src/environments/environment.prod.ts"
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
