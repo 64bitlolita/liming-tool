@@ -1,21 +1,27 @@
-:host {
-  margin-left: 100px;
-}
 
 table {
-  width: 420px;
-  margin-left: 20px;
+  font-size: 10px;
+  width: 300px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+
+  &.table4 {
+    margin-bottom: 22px;
+  }
 }
 
 .block {
   display: inline-block;
+  vertical-align: top;
+  margin-top: 0;
 }
 
-th {
-  width: 210px;
+th, td {
+  width: 150px;
+  padding: 2px !important;
 }
 
 td > input {
   background-color: lightyellow;
-  width: 150px;
 }
